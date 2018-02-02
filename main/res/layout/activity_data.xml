@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lab5.ex.DataActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_data"
+        android:hint="@string/type_your_name"
+        android:layout_alignParentTop="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_data"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btn_ok"
+        android:text="ok"
+        android:layout_toLeftOf="@id/btn_cancel"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_data"
+        android:text="@string/cancel"
+        android:textSize="@dimen/dimen_num"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btn_cancel"
+        />
+</RelativeLayout>
